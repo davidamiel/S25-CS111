@@ -1,3 +1,4 @@
+package W5;
 public class W5Triangles3 {
 
     public static void main(String[] args) {

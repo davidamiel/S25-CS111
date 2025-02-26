@@ -1,3 +1,4 @@
+package W5;
 public class W5Multiples1 {
 
 	public static void main(String[] args) {
