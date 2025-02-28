@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class ArrayBasics {
 
     public static void main(String[] args) {
@@ -36,20 +34,14 @@ public class ArrayBasics {
                 max = values[i];
             }
         }
-
         System.out.println("Max value: " + max);
 
 
         // Print the average homework grade, but we drop the lowest grade
+        // TRY THIS YOURSELF - the answer is in ArrayGrades.java
 
         // Print the average homework grade, but we drop the lowest 2 grades
-
-
-
-        
-        
-
-
+        // TRY THIS YOURSELF - the answer is in ArrayGrades.java
 
     }
     
