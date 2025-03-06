@@ -4,6 +4,8 @@ public class GradeAverage {
 
         char[] grades = new char[3];
 
+        // Remember, we input grades like "AAA" since the newline counts as a character!
+
         char gradeOne = StdIn.readChar();
         grades[0] = gradeOne;
 

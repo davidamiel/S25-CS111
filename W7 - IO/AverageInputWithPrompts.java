@@ -1,4 +1,4 @@
-public class AverageInputImproved {
+public class AverageInputWithPrompts {
 
     public static void main(String[] args) {
     
