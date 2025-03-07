@@ -1,0 +1,4 @@
+A+ is not a valid grade, treating as an A.
+Total Classes: 6
+Total Grade-Points: 17.0
+GPA: 2.8333333333333335
