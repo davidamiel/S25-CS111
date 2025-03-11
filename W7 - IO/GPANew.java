@@ -1,5 +1,8 @@
 public class GPANew {
 
+    // This was our class code - YOU need to add the "previous character" stuff!
+    // For an example with the previous character stuff, see "ImprovedGPACalculator.java"
+
     public static void main(String[] args) {
 
         double sum = 0;
