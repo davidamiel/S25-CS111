@@ -84,9 +84,9 @@ public final class StdOut {
 
     public static void setFile(String filename) {
         try {
-            // Create folders if they don't exist
-            new java.io.File(filename).getParentFile().mkdirs();
-            out = new PrintWriter(new FileOutputStream(new java.io.File(filename)), true);
+            java.io.File f = new java.io.File(filename);
+            if (f.getParentFile() != null) f.getParentFile().mkdirs();
+            out = new PrintWriter(new FileOutputStream(f), true);
         }
         catch (java.io.IOException ioe) {
             System.err.println("Could not open " + filename);
