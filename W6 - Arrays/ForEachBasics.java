@@ -1,4 +1,4 @@
-public class ForEach {
+public class ForEachBasics {
 
     public static void main(String[] args) {
 

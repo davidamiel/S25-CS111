@@ -1,16 +1,17 @@
 public class ArrayFunctions {
 
     /* 
-    Traverse and display the elements in an array in order and in reverse order.
-    Reverse the elements in an array.
-    Find and report the minimum/maximum value in an array.
-    Find and report the index of the minimum/maximum value in an array.
-    Find the average of numerical values in an array.
-    Exchange values of two elements in an array.
-    Shift elements in array to the right/left as specifications describe.
-    Count the number of elements in an array satisfying given specifications.
-    Remove elements that satisfy certain conditions from an array.
-    Remove duplicate values from an array.
+    This was YOUR TASK - Write code for each of the array task L.O.'s!
+        Traverse and display the elements in an array in order and in reverse order.
+        Reverse the elements in an array.
+        Find and report the minimum/maximum value in an array.
+        Find and report the index of the minimum/maximum value in an array.
+        Find the average of numerical values in an array.
+        Exchange values of two elements in an array.
+        Shift elements in array to the right/left as specifications describe.
+        Count the number of elements in an array satisfying given specifications.
+        Remove elements that satisfy certain conditions from an array.
+        Remove duplicate values from an array.
     */
 
     public static void printArray(int[] array) {
@@ -135,6 +136,7 @@ public class ArrayFunctions {
         int count = 0;
 
         // Shift elements to the left to remove the target values
+        // CAN YOU WRITE CODE TO INSTEAD SHIFT TO THE RIGHT?
         for (int i = 0; i < array.length; i++) {
             if (array[i] != target) {
                 array[count++] = array[i];
@@ -151,6 +153,7 @@ public class ArrayFunctions {
     }
 
     public static int[] removeDuplicates(int[] array) {
+        // THIS IS ONLY ONE SOLUTION - can you write a different one?
         int count = 0;
 
         // Use a temporary array to store unique elements

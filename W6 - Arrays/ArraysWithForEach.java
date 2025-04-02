@@ -1,4 +1,6 @@
-public class ArraysMore {
+import java.util.Arrays;
+
+public class ArraysWithForEach {
 
     public static void main(String[] args) {
     
@@ -37,6 +39,7 @@ public class ArraysMore {
     System.out.println("Maximum: " + maximum);
 
     // Find the max of an array and its index, for loop
+        // This is NOT a task for a for-each loop!
     maximum = values[0];
     int maxindex = 0;
     for(int i = 0; i < values.length; i++){
@@ -47,8 +50,7 @@ public class ArraysMore {
     }
     System.out.println("Maximum: " + maximum + " at index " + maxindex);
 
-
-    // Reverse the values in an array
+    // Reverse the values in an array - CREATE A NEW ARRAY, FILL IT IN REVERSE ORDER
     double[] reversed = new double[values.length];
     for(int i = 0; i < values.length; i ++) {
         // When i = 0, I need to put the first element of values into the last element of reversed
@@ -62,44 +64,39 @@ public class ArraysMore {
         System.out.print(element + "\t");
     }
 
-        // Reverse the values in an array in place
-        for(int i = 0; i < values.length/2; i ++) {
-            //When i = 0, temporary holds the last element in the array
-            //            I then put the first element into the last slot
-            //            I then put (temporary, or what was) the last element into the first slot
-            double temporary = values[values.length - (i+1)];
-            values[values.length - (i+1)] = values[i];
-            values[i] = temporary;
-        }
-        System.out.println();
-        for (double element : values) {
-            System.out.print(element + "\t");
-        }
+    // Reverse the values in an array in place
+    for(int i = 0; i < values.length/2; i ++) {
+        // When i = 0, temporary holds the last element in the array
+        //            I then put the first element into the last slot
+        //            I then put (temporary, or what was) the last element into the first slot
+        double temporary = values[values.length - (i+1)];
+        values[values.length - (i+1)] = values[i];
+        values[i] = temporary;
+    }
+    System.out.println();
+    for (double element : values) {
+        System.out.print(element + "\t");
+    }
 
+    // Check if a value is contained in an array
+    double target = 50.0;
+    for(double value : values) {
+        if(value - target == 0) {
+            System.out.println("Value found!");
+        }
+    }
 
-        //Check if a value is contained in an array
-        double target = 50.0;
-        for(double value : values) {
-            if(value - target == 0) {
-                System.out.println("Value found!");
+    // Check for duplicates in an array
+    boolean duplicatesFound = false;
+    for(int i = 0; i < values.length; i++) {
+        for(int j = i + 1; j < values.length; j++) {
+            if (values[i] - values[j] == 0) { // Remember - I'm comparing doubles!
+                duplicatesFound = true; 
             }
         }
-
-        // Check for duplicates in an array
-        for(int i = 0; i < values.length; i++) {
-            double targetTwo = values[i];
-            int timesFound = 0;
-            for(double value : values) {
-                if(value - targetTwo == 0) {
-                    timesFound++;
-                }
-            }
-            if (timesFound > 1) {
-                System.out.println("Duplicate!");
-                values[i] = -1;
-            }
-
-        }
+    }
+    System.out.println("Duplicates Found: " + duplicatesFound);
+    System.out.println("Values = " + Arrays.toString(values));
 
 }
 }

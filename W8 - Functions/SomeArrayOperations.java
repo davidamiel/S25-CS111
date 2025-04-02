@@ -1,4 +1,6 @@
-public class ArrayOperations{
+public class SomeArrayOperations {
+
+    // A LOT of this code is REVIEW!
 
     public static void printArray(int[] array) {
 

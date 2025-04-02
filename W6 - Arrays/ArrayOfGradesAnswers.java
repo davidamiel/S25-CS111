@@ -1,4 +1,4 @@
-public class ArrayGrades {
+public class ArrayOfGradesAnswers {
 
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-public class Demo {
+public class CallStackDemo {
     public static void main(String[] args)  {
         methodA();
     }

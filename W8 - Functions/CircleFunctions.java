@@ -1,4 +1,4 @@
-public class Functions {
+public class CircleFunctions {
 
     public static double getArea(double radius) {
         // As a reminder, the area of a circle is pi * r^2

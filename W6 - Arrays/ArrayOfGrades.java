@@ -1,4 +1,4 @@
-public class ArrayBasics {
+public class ArrayOfGrades {
 
     public static void main(String[] args) {
         
@@ -14,7 +14,7 @@ public class ArrayBasics {
 
         int[] grades = {80, 85, 91, 99, 73};
 
-        int sum = 0;
+        double sum = 0;
         for(int i = 0;  i < grades.length; i++) {
             sum = sum + grades[i];
             // sum += grades[i];
@@ -38,10 +38,10 @@ public class ArrayBasics {
 
 
         // Print the average homework grade, but we drop the lowest grade
-        // TRY THIS YOURSELF - the answer is in ArrayGrades.java
+        // TRY THIS YOURSELF - the answer is in ArrayOfGradesAnswers.java
 
         // Print the average homework grade, but we drop the lowest 2 grades
-        // TRY THIS YOURSELF - the answer is in ArrayGrades.java
+        // TRY THIS YOURSELF - the answer is in ArrayOfGradesAnswers.java
 
     }
     

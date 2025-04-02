@@ -1,4 +1,4 @@
-public class TwoDArrays {
+public class TwoDimensionalArrays {
 
     public static void main(String[] args) {
         // Declare a 2D Array
@@ -16,7 +16,7 @@ public class TwoDArrays {
             {6, 7, 8, 9, 10}, 
             {11, 12, 13, 14, 15}
         };
-        // ^ don't forget the ; at the end!
+      // ^ don't forget the ; at the end!
 
 
         // Let's print out a 2D array:
@@ -57,6 +57,5 @@ public class TwoDArrays {
             System.out.println("Average of row "  + i + " = " + sumTwo/dataTwo[i].length);
         }
         // what if you wanted to put the average in its own array? 
-        // (See GradeChallenges.java for examples!)
     }
 }
