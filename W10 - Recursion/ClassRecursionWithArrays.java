@@ -1,3 +1,5 @@
+import javax.xml.stream.events.StartDocument;
+
 public class ClassRecursionWithArrays {
     
     /**
@@ -66,10 +68,20 @@ public class ClassRecursionWithArrays {
         return Rfind(target, array, startIndex + 1);
     }
 
+    public static int findMax(int[] array, int startIndex) {
+        if(startIndex == array.length - 1) {
+            return array[startIndex];
+        } else if (array[startIndex] > findMax(array, startIndex + 1)) {
+            return array[startIndex];
+        } else {
+            return findMax(array, startIndex + 1); 
+        }
+
+    }
+
     public static void main(String[] args) {
-        int[] array = {1, 2, 4, 5, 6, 7};
-        boolean result = Rfind(12, array, 0);
-        System.out.println(result);
+        int[] array = {1, 8, 4, 5, 6, 7};
+        System.out.println(findMax(array, 0));
     }
 
 
