@@ -8,6 +8,21 @@ public class StringPalindromes {
         return true;
     }
 
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
     private static boolean isPalindromeRecursive(String s, int left, int right) {
         // Base case
         if (left >= right) {
