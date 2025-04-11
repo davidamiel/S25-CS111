@@ -10,7 +10,17 @@ public class WorstDiceGameEver {
             StdOut.println("\nWhat would you like to do?\n");
             printChoices();
             int choice = StdIn.readInt();
-            switch(choice) {
+            switch(choice) { /// BTW - a switch statemeent is basically a series of if statements! 
+                /// you don't "need to know" how to write them, but they are a good way to do this.
+                /// the alternative is to write a series of if statements, like this:
+                ///   if (choice == 1) {
+                ///        seeDice();
+                ///   } else if (choice == 2) {
+                ///       rollAll();
+                ///   ...and so on.
+                /// But a switch statement is cleaner and easier to read.
+                /// We include continue because we want to go back to the top of the loop after each choice. Otherwise,
+                /// we would execute all code after the switch statement, which is not what we want (that's just how switch statements work).
                 case 1: 
                     seeDice();
                     continue;

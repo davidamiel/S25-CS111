@@ -51,7 +51,7 @@ public class ClassDie {
     // It should always use this header exactly!
     // We first make sure we are comparing two objects of the same type!
     public boolean equals(Object other) {
-        if (other instanceof ClassDie) {  // is the other object an ClassDie?
+        if (other instanceof ClassDie) {  // is the other object an ClassDie? (BTW THE ISSUE DURING CLASS - LOWERCASE 'o' in instanceof!!!)
             ClassDie otherDie = (ClassDie) other;
             boolean sameValue = this.currentValue == otherDie.getCurrentValue();
             boolean sameSides = this.numberOfSides == otherDie.getNumberOfSides();
