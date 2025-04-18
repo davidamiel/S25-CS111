@@ -1,5 +1,4 @@
 public class Student {
-    // THIS IS AN EXAMPLE OF BAD STATIC USAGE
 
     private static String name;
     private int studentID;
